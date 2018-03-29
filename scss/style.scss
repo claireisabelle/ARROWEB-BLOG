@@ -1,0 +1,107 @@
+/*
+ 
+ Theme Name: Arroweb Blog
+ Theme URI: https://arroweb.net
+ Author: Claire Bourdalé
+ Author URI: https://arroweb.net
+ Description: Theme Arroweb Blog
+ Version: 1.0
+ License: GNU General Public License V2 or later
+ License URI: http://www.gnu.org/licenses/glp-2.0.html
+ Text Domain: arroweb-blog
+
+*/
+
+/*
+ ***************************************************
+ 	VARIABLES
+ ***************************************************
+ */
+$roboto: 'Roboto Condensed', sans-serif;
+
+
+/*
+ ***************************************************
+ 	GLOBAL
+ ***************************************************
+ */
+.bandeau2{
+	padding-bottom: 40px !important;
+}
+
+
+/*
+ ***************************************************
+ 	SEARCH
+ ***************************************************
+ */
+.blog-search{
+	margin: 15px 0;
+}
+.blog-search span.title-search {
+	display: none;
+}
+
+.blog-search label.screen-reader-text{
+	position: absolute;
+	color: transparent !important;
+}
+
+
+/*
+ ***************************************************
+ 	BLOG INDEX
+ ***************************************************
+ */
+.blog-index{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.blog-index-article{
+	background-color: #fff;
+	margin-bottom: 20px !important;
+	width: 100% !important;
+	max-width: 300px;
+}
+
+@media only screen and(min-width: 775px) and (max-width: 995px){
+	.blog-index{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media only screen and (max-width: 774px){
+	.blog-index{
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	.blog-index-article{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+}
+
+.blog-index-article-img img{
+	width: 100%;
+	height: auto;
+}
+
+.blog-index-article h2{
+	font-family: $roboto !important;
+	color: rgb(40,40,40);
+	font-size: 1.3rem !important;
+	padding: 20px !important;
+	margin: 0px !important;
+	line-height: 1.6rem !important;
+	font-weight: bold !important;
+}
+
+.blog-index-article p{
+	padding: 20px !important;
+	margin: 0px !important;
+	font-family: $roboto !important;
+	line-height: 1.7rem !important;
+}
