@@ -172,5 +172,57 @@ a.page-numbers:hover {
     flex-direction: column;
     align-items: center;
     height: 100%; } }
+/*
+ ***************************************************
+ 	FIL D'ARIANE
+ ***************************************************
+ */
+.ariane p {
+  font-size: 0.8rem; }
+
+.ariane a {
+  color: rgba(0, 0, 0, 0.55);
+  font-weight: bold; }
+
+.ariane i.fa-chevron-right {
+  font-size: 0.5rem;
+  padding-left: 8px;
+  padding-right: 8px; }
+
+/*
+ ***************************************************
+ 	SINGLE POST
+ ***************************************************
+ */
+.post-content {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff; }
+
+.post-content img.attachment-post-thumbnail {
+  max-width: 100% !important; }
+
+.post-category p {
+  font-size: 0.8rem;
+  color: #c4c4c4; }
+
+.post-thumbnail {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+.post-content h1 {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 1.8em !important;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 0px;
+  padding-bottom: 10px; }
+
+.post-category a {
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 2px; }
 
 /*# sourceMappingURL=style.css.map */

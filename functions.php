@@ -68,6 +68,7 @@ function arroweb_blog_setup(){
 	add_theme_support('post-thumbnails');
 
 	add_image_size('thumbnail-home', 300, 140, true);
+	add_image_size('thumbnail-single', 650, 9999);
 
 }
 add_action('after_setup_theme', 'arroweb_blog_setup');

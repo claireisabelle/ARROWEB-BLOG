@@ -8,7 +8,7 @@
 		<div class="container">
 			<section class="contact">
 				<h1>Mieux comprendre les concepts du web...</h1>
-				<p>...quand vous êtes perdu dans l'univers du web...</p>
+				<p>Notions clés, vocabulaire, origines, actualités... pour mieux appréhender cet univers !</p>
 			</section>	
 
 			<?php if(is_active_sidebar('search')) : ?>
