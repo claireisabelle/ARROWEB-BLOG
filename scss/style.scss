@@ -18,6 +18,9 @@
  ***************************************************
  */
 $roboto: 'Roboto Condensed', sans-serif;
+$primary: #02569C;
+$secondary: #061949;
+$third: #19619A;
 
 
 /*
@@ -45,6 +48,29 @@ $roboto: 'Roboto Condensed', sans-serif;
 .blog-search label.screen-reader-text{
 	position: absolute;
 	color: transparent !important;
+	display: none;
+}
+
+#searchsubmit{
+	line-height:1.25;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	border:1px solid transparent;
+	padding:.5rem 1rem;
+	font-size:1rem;
+	border-radius:.25rem;
+	-webkit-transition:all .2s ease-in-out;
+	-o-transition:all .2s ease-in-out;
+	transition:all .2s ease-in-out;
+	cursor: pointer;
+	color: #fff;
+	background-color: $third;
+	margin-left: 10px;
 }
 
 
@@ -99,9 +125,94 @@ $roboto: 'Roboto Condensed', sans-serif;
 	font-weight: bold !important;
 }
 
+.blog-index-article h2 a{
+	color: rgb(40,40,40);
+}
+
+.blog-index-article h2 a{
+	text-decoration: none;
+}
+
+
 .blog-index-article p{
 	padding: 20px !important;
 	margin: 0px !important;
 	font-family: $roboto !important;
 	line-height: 1.7rem !important;
 }
+
+
+/*
+ ***************************************************
+ 	PAGINATION
+ ***************************************************
+ */
+
+
+nav.navigation.pagination h2{
+	opacity: 0 !important;
+	display: none;
+}
+
+.page-numbers {
+	display: inline-block;
+	padding: 5px 10px;
+	margin: 0 2px 0 0;
+	border: 1px solid #eee;
+	line-height: 1;
+	text-decoration: none;
+	border-radius: 2px;
+	font-weight: 600;
+}
+
+.page-numbers.current,
+a.page-numbers:hover {
+	background: $primary;
+	color: #fff;
+}
+
+
+/*
+ ***************************************************
+ 	NEWSLETTER
+ ***************************************************
+ */
+.newsletter{
+	background-color: $primary;
+	height: 70px;
+	line-height: 70px;
+	color: #fff;
+}
+
+.newsletter-content{
+	display: flex;
+	justify-content: center;
+}
+
+.newsletter-texte{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.newsletter-texte a{
+	font-size: 0.8rem;
+	color: rgba(255,255,255,0.7);
+}
+
+.newsletter-bouton input[type="text"]{
+	margin-right: 10px;
+}
+
+@media only screen and (max-width: 995px){
+	.newsletter{
+		height: 150px;
+		line-height: 45px;
+	}
+
+	.newsletter-content{
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+	}
+}
+
