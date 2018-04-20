@@ -56,3 +56,18 @@ function arroweb_blog_widgets($id){
 }
 
 add_action('widgets_init', 'arroweb_blog_widgets');
+
+
+/*
+ ***********************************************
+ * SET UP THEME
+ ***********************************************
+ */
+
+function arroweb_blog_setup(){
+	add_theme_support('post-thumbnails');
+
+	add_image_size('thumbnail-home', 300, 140, true);
+
+}
+add_action('after_setup_theme', 'arroweb_blog_setup');
