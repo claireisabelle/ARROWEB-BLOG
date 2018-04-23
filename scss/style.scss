@@ -12,9 +12,27 @@
 
 */
 
+/* ------------------------------------------------- *|
+	SOMMAIRE
+|* ------------------------------------------------- */
+/**
+ * VARIABLES ........................ Variables Sass
+ * GLOBAL ........................... Généralités
+ * SEARCH ........................... Formulaire de recherche page index.php
+ * BLOG INDEX ....................... Index.php : listing des articles
+ * PAGINATION ....................... Composant pour dispatcher les articles sur plusieurs pages
+ * NEWSLETTER ....................... Formulaire d'inscription à la newsletter
+ * FIL D'ARIANE ..................... Fil d'ariane de single.php : chemin de l'article
+ * SINGLE POST ...................... Single.php : page individuelle de l'article
+ */
+
+
+
+
+
 /*
  ***************************************************
- 	VARIABLES
+ 	$VARIABLES
  ***************************************************
  */
 $roboto: 'Roboto Condensed', sans-serif;
@@ -23,9 +41,12 @@ $secondary: #061949;
 $third: #19619A;
 
 
+
+
+
 /*
  ***************************************************
- 	GLOBAL
+ 	$GLOBAL
  ***************************************************
  */
 .bandeau2{
@@ -33,9 +54,12 @@ $third: #19619A;
 }
 
 
+
+
+
 /*
  ***************************************************
- 	SEARCH
+ 	$SEARCH
  ***************************************************
  */
 .blog-search{
@@ -74,9 +98,12 @@ $third: #19619A;
 }
 
 
+
+
+
 /*
  ***************************************************
- 	BLOG INDEX
+ 	$BLOG INDEX
  ***************************************************
  */
 .blog-index{
@@ -142,13 +169,14 @@ $third: #19619A;
 }
 
 
+
+
+
 /*
  ***************************************************
- 	PAGINATION
+ 	$PAGINATION
  ***************************************************
  */
-
-
 nav.navigation.pagination h2{
 	opacity: 0 !important;
 	display: none;
@@ -172,9 +200,12 @@ a.page-numbers:hover {
 }
 
 
+
+
+
 /*
  ***************************************************
- 	NEWSLETTER
+ 	$NEWSLETTER
  ***************************************************
  */
 .newsletter{
@@ -217,9 +248,12 @@ a.page-numbers:hover {
 }
 
 
+
+
+
 /*
  ***************************************************
- 	FIL D'ARIANE
+ 	$FIL D'ARIANE
  ***************************************************
  */
 .ariane p{
@@ -237,9 +271,12 @@ a.page-numbers:hover {
 }
 
 
+
+
+
 /*
  ***************************************************
- 	SINGLE POST
+ 	$SINGLE POST
  ***************************************************
  */
 .post-content{

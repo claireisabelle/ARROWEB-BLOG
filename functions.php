@@ -1,9 +1,21 @@
 <?php
 
+/* ------------------------------------------------- *|
+	SOMMAIRE
+|* ------------------------------------------------- */
+/**
+ * CSS AND JS SCRIPTS................ Déclaration des fichiers .css et .js
+ * WIDGETS .......................... Espace widget pour le formulaire de recherche
+ * SET UP THEME ..................... Taille des images et thumbnails
+ */
+
+
+
+
 
 /*
  ***********************************************
- * CSS AND JS SCRIPTS
+ * $CSS AND JS SCRIPTS
  ***********************************************
  */
 
@@ -38,9 +50,13 @@ function arroweb_blog_styles(){
 
 add_action('wp_enqueue_scripts', 'arroweb_blog_styles');
 
+
+
+
+
 /*
  ***********************************************
- * WIDGETS
+ * $WIDGETS
  ***********************************************
  */
 
@@ -58,9 +74,12 @@ function arroweb_blog_widgets($id){
 add_action('widgets_init', 'arroweb_blog_widgets');
 
 
+
+
+
 /*
  ***********************************************
- * SET UP THEME
+ * $SET UP THEME
  ***********************************************
  */
 
