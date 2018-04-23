@@ -18,7 +18,7 @@
 			<?php endif; ?>
 
 			<?php if(have_posts()) : ?>
-
+			
 			<div class="blog-index">
 
 				<?php while(have_posts()) : the_post(); ?>
