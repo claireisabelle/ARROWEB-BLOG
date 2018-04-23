@@ -10,7 +10,8 @@
 	<meta property="og:url" content="<?php echo esc_url(get_permalink()); ?>" />
 	<meta property="og:title" content="<?php the_title(); ?>" />
 	<meta property="og:description" content="<?php the_field('description_seo'); ?>" />
-	<meta property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(),'thumbnail')); ?>" />
+	<meta property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(),'medium')); ?>" />
+
 
 <?php get_template_part('header-end'); ?>
 
@@ -32,10 +33,10 @@
 			</div>
 			<!-- /.ariane -->
 
-			<div class="post-content">
+			<?php if(have_posts()) : ?>
+				<?php while(have_posts()) : the_post(); ?>
 
-				<?php if(have_posts()) : ?>
-					<?php while(have_posts()) : the_post(); ?>
+					<div class="post-content">
 
 						<div class="post-category">
 							<p>Catégorie(s) :
@@ -60,13 +61,47 @@
 
 						<?php the_content(); ?>
 
-					<?php endwhile; ?>
 
-				<?php else : ?>
-					<?php e_('<p>L\'article cherché n\'existe pas...</p>'); ?>
-				<?php endif; ?>
-			</div>
-			<!-- /.post-content -->
+						<div class="social-media">		
+
+							<!-- twitter -->
+							<a href="http://twitter.com/share" class="twitter-share-button" 
+							data-count="vertical" data-via="clairebourdale">Tweet</a>
+							<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+							
+							<!-- Linked -->
+							<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+							<script type="in/share"></script>
+
+							<!-- Facebook -->
+							
+							<script>(function(d, s, id) {
+							  var js, fjs = d.getElementsByTagName(s)[0];
+							  if (d.getElementById(id)) return;
+							  js = d.createElement(s); js.id = id;
+							  js.src = 'https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.12';
+							  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+
+							<div class="fb-like" data-href="<?php echo esc_url(get_permalink()); ?>" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+
+						</div>
+						<!-- /.social-media -->
+
+					</div>
+					<!-- /.post-content -->
+
+					<div class="post-read-more">
+						<h3>Pour aller plus loin sur le sujet...</h3>
+						<?php the_field('pour_aller_plus_loin'); ?>
+					</div>
+					<!-- /.post-read-more -->
+
+				<?php endwhile; ?>
+
+			<?php else : ?>
+				<?php e_('<p>L\'article cherché n\'existe pas...</p>'); ?>
+			<?php endif; ?>
 
 		</div>
 			<!-- /.container -->
