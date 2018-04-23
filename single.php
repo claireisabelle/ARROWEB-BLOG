@@ -97,6 +97,36 @@
 					</div>
 					<!-- /.post-read-more -->
 
+					<div class="post-previous-next">
+						<p>A lire également : <br />
+						<?php previous_post_link('<strong>&#8592; %link</strong>'); ?> <br />
+						<?php next_post_link('<strong>&#8594; %link</strong>'); ?></p>
+					</div>
+					<!-- /.post-previous-next -->
+
+					<div class="post-comments-list">
+						<h3><?php comments_number( 'Aucun commentaire posté.', '1 commentaire publié :', '% commentaires publiés :' ); ?></h3>
+						<ul class="commentlist">
+							<?php
+								$comments = get_comments(array(
+									'post_id' => $post->ID,
+									'status'  => 'approve'		
+								)); 
+
+								wp_list_comments(array(
+									'per_page' 			=> 10,
+									'reverse_top_level' => false
+								), $comments);
+							?>
+						</ul>
+					</div>
+					<!-- /.post-comments-list -->
+
+					<div class="post-comment-form">
+						<?php comment_form(); ?>
+						<p>Votre commentaire sera publié après approbation.</p>
+					</div>
+
 				<?php endwhile; ?>
 
 			<?php else : ?>

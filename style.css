@@ -24,6 +24,7 @@
  * NEWSLETTER ....................... Formulaire d'inscription à la newsletter
  * FIL D'ARIANE ..................... Fil d'ariane de single.php : chemin de l'article
  * SINGLE POST ...................... Single.php : page individuelle de l'article
+ * COMMENTS ......................... Commentaires de l'article
  */
 /*
  ***************************************************
@@ -252,5 +253,115 @@ a.page-numbers:hover {
   font-size: 1rem;
   color: #02569C;
   padding-bottom: 10px; }
+
+.post-previous-next {
+  background-color: #02569C;
+  margin-top: 20px;
+  padding: 30px 30px 10px 30px; }
+
+.post-previous-next p {
+  color: #fff; }
+
+.post-previous-next a {
+  color: #fff; }
+
+/*
+ ***************************************************
+ 	$COMMENTS
+ ***************************************************
+ */
+.post-comments-list {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px; }
+
+.post-comments-list h3 {
+  font-size: 1rem;
+  color: #02569C;
+  padding-bottom: 10px; }
+
+ul.commentlist {
+  list-style-type: none !important; }
+
+ul.commentlist li {
+  background-color: #F4F0F4;
+  padding: 18px;
+  position: relative;
+  margin-bottom: 15px; }
+
+ul.commentlist li:before {
+  position: absolute;
+  content: "◄";
+  left: -22px;
+  font-size: 2.5rem;
+  color: #F4F0F4; }
+
+img.avatar.avatar-32.photo {
+  display: none !important; }
+
+.comment-author cite.fn {
+  font-style: normal !important;
+  font-weight: bold; }
+
+.comment-meta a {
+  font-size: 0.8rem;
+  color: #02569C; }
+
+ul.children {
+  list-style-type: none !important;
+  margin-bottom: 20px; }
+
+ul.children li {
+  background-color: #fff; }
+
+ul.children li:before {
+  color: #fff; }
+
+ul.children ul.children li {
+  background-color: #F4F0F4; }
+
+ul.children ul.children li:before {
+  color: #F4F0F4; }
+
+.reply {
+  margin-bottom: 10px; }
+
+.reply a {
+  font-size: 0.7rem;
+  color: #02569C; }
+
+.post-comment-form {
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 30px; }
+
+.post-comment-form h3 {
+  font-size: 1rem;
+  color: #02569C;
+  padding-bottom: 10px; }
+
+.post-comment-form label {
+  display: block !important; }
+
+.post-comment-form p.form-submit input {
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  cursor: pointer;
+  color: #fff;
+  background-color: #19619A;
+  margin-left: 10px; }
 
 /*# sourceMappingURL=style.css.map */
