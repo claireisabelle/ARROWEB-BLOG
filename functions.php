@@ -7,6 +7,7 @@
  * CSS AND JS SCRIPTS................ Déclaration des fichiers .css et .js
  * WIDGETS .......................... Espace widget pour le formulaire de recherche
  * SET UP THEME ..................... Taille des images et thumbnails
+ * CUSTOMISATION PAGE WP-LOGIN.PHP .. Espace de connexion personnalisé
  */
 
 
@@ -92,6 +93,33 @@ function arroweb_blog_setup(){
 }
 add_action('after_setup_theme', 'arroweb_blog_setup');
 
+
+
+
+
+/*
+ ***********************************************
+	CUSTOMISATION PAGE WP-LOGIN.PHP
+ ***********************************************
+ */
+
+function arroweb_blog_custom_login_css()  {
+    echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('template_directory') . '/css/style-login.css" />';
+}
+add_action('login_head', 'arroweb_blog_custom_login_css');
+
+// Filtre qui permet de changer l'url du logo
+function arroweb_blog_custom_url_login()  {
+    return get_bloginfo( 'siteurl' ); // On retourne l'index du site
+}
+add_filter('login_headerurl', 'arroweb_blog_custom_url_login');
+
+// Filtre qui permet de changer l'attribut title du logo
+function arroweb_blog_custom_title_login($message) {
+	$title = 'Arroweb - Création de site Internet';
+    return $title; 
+}
+add_filter('login_headertitle', 'arroweb_blog_custom_title_login');
 
 
 

@@ -1,0 +1,26 @@
+body {
+    background-color: #eeeeee; !important;
+}
+
+h1 a{
+    background: url(img/logo-arroweb-carre.png) no-repeat !important;
+    width: 223px !important;
+    height: 150px !important;
+}
+
+#backtoblog {
+    background-color: #666;
+    box-shadow: 0 1px 3px #666;
+    left: 0;
+    margin: 0 !important;
+    padding: 10px !important;
+    position: fixed;
+    text-align: left;
+    text-shadow: 0 0 0 !important;
+    top: 0;
+    width: 100%;
+}
+
+.login #backtoblog a {
+    color: #FFFFFF !important;
+}
