@@ -61,6 +61,11 @@
 
 						<?php the_content(); ?>
 
+						<div class="post-tags">
+							<p><em><?php the_tags('Mots-clés : ', ' &bull; ','<br />'); ?></em></p>
+						</div>
+						<!-- /.post-tags -->
+
 
 						<div class="social-media">		
 
@@ -130,7 +135,7 @@
 				<?php endwhile; ?>
 
 			<?php else : ?>
-				<?php e_('<p>L\'article cherché n\'existe pas...</p>'); ?>
+				<?php _e('<p>L\'article cherché n\'existe pas...</p>'); ?>
 			<?php endif; ?>
 
 		</div>

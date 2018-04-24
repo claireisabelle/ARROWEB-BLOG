@@ -78,7 +78,7 @@
 			?>
 
 			<?php else : ?>
-				<?php e_('<p>Aucun article publié.</p>'); ?>
+				<?php _e('<p>Aucun article publié.</p>'); ?>
 			<?php endif; ?>
 
 
