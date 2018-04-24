@@ -45,6 +45,24 @@
 			</div>
 			<!-- /.post-category -->
 
+			<div class="ariane">
+				<p><a href="https://arroweb.net"><i class="fa fa-home" aria-hidden="true"></i> Arroweb</a> <i class="fa fa-chevron-right" aria-hidden="true"></i> <a href="<?php echo esc_url( home_url( '/' ) ); ?>">Blog</a> <i class="fa fa-chevron-right" aria-hidden="true"></i>
+
+				<?php $curent_category = get_queried_object(); ?>
+
+				<?php $current_couleur = get_field('couleur', $curent_category); ?>
+				
+				<?php 
+					echo '<span style="padding:3px 5px;color:#fff;background-color:';
+					echo $current_couleur;
+					echo '">';
+					echo $curent_category->name; 
+					echo '</span>';
+				?>
+				</p>
+			</div>
+			<!-- /.ariane -->
+
 			<?php if(have_posts()) : ?>
 			
 			<div class="blog-index">
