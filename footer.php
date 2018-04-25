@@ -7,10 +7,13 @@
 			<!-- /.newsletter-texte -->
 
 			<div class="newsletter-bouton">
-				<form action="post">
-					<input class="btn btn-light" type="text" placeholder="Votre adresse e-mail"> 
+				<form action='https://arroweb.net/newsletter/subscription.php' method='post' target='pmnlwindow' onsubmit="window.open('//newsletter/subscription.php', 'pmnlwindow', 'scrollbars=yes,width=700,height=210');return true">
+					<input class="btn btn-light" type="text" placeholder="Votre adresse e-mail" name='email_addr'> 
+					<input type='hidden' name='list_id' value='1'>
+                    <input type='hidden' name='op' value='join'>
 					<input class="btn btn-info" type="submit" value="Valider">
 				</form>
+
 			</div>
 			<!-- /.newsletter-bouton -->
 
