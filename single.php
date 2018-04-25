@@ -12,6 +12,10 @@
 	<meta property="og:description" content="<?php the_field('description_seo'); ?>" />
 	<meta property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(),'medium')); ?>" />
 
+	<meta prefix="og: http://ogp.me/ns#" property="og:title" content="<?php the_title(); ?>" />
+	<meta prefix="og: http://ogp.me/ns#" property="og:image" content="<?php echo esc_url(get_the_post_thumbnail_url(get_the_ID(),'medium')); ?>" />
+	<meta prefix="og: http://ogp.me/ns#" property="og:url" content="<?php echo esc_url(get_permalink()); ?>" />
+
 
 <?php get_template_part('header-end'); ?>
 
@@ -70,13 +74,34 @@
 						<div class="social-media">		
 
 							<!-- twitter -->
-							<a href="http://twitter.com/share" class="twitter-share-button" 
-							data-count="vertical" data-via="clairebourdale">Tweet</a>
-							<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+							<script>window.twttr = (function(d, s, id) {
+							var js, fjs = d.getElementsByTagName(s)[0],
+							t = window.twttr || {};
+							if (d.getElementById(id)) return t;
+							js = d.createElement(s);
+							js.id = id;
+							js.src = "https://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js, fjs);
+
+							t._e = [];
+							t.ready = function(f) {
+							t._e.push(f);
+							};
+
+							return t;
+							}(document, "script", "twitter-wjs"));</script>
+
+							<a class="twitter-share-button"
+							href="https://twitter.com/intent/tweet">
+							Tweet</a>
+
+
+							
+							
 							
 							<!-- Linked -->
-							<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
-							<script type="in/share"></script>
+							<script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: fr_FR</script>
+							<script type="IN/Share"></script>
 
 							<!-- Facebook -->
 							
