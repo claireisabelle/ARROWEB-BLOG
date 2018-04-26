@@ -39,6 +39,15 @@
 .bandeau2 {
   padding-bottom: 40px !important; }
 
+blockquote {
+  background-color: #eee;
+  margin: 15px 60px;
+  padding: 20px 15px 5px 15px;
+  border-left: solid 5px rgba(0, 0, 0, 0.75); }
+
+blockquote p {
+  color: rgba(0, 0, 0, 0.75) !important; }
+
 /*
  ***************************************************
  	$SEARCH
@@ -233,6 +242,38 @@ a.page-numbers:hover {
   color: rgba(0, 0, 0, 0.7);
   padding-top: 0px;
   padding-bottom: 10px; }
+
+.post-content h2 {
+  font-size: 1.6em !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #02569C; }
+
+.post-content h3 {
+  font-family: 'Roboto Condensed', sans-serif !important;
+  font-size: 1.4em !important;
+  color: rgba(0, 0, 0, 0.75);
+  padding-top: 25px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.post-content p {
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.post-content img {
+  max-width: 100%;
+  height: auto; }
+
+.post-content img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.post-content img.alignright {
+  float: right;
+  margin: 0 0 1em 1em; }
 
 .post-category a {
   color: #fff;

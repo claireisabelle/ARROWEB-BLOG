@@ -18,7 +18,7 @@
 			<!-- /.newsletter-bouton -->
 
 			<div class="newsletter-texte">
-				<em><a href="https://arroweb.net/mentions-legales">(Politique de confidentialité)</a></em>
+				<em><a href="https://arroweb.net/protection-donnees">(Protection de vos données personnelles, cliquez ici)</a></em>
 			</div>
 			<!-- /.newsletter-texte -->
 		</div>
