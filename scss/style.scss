@@ -65,6 +65,12 @@ blockquote p{
 	color: rgba(0,0,0,0.75) !important;
 }
 
+@media only screen and (max-width: 600px){
+	blockquote{
+		margin: 15px 10px;
+	}
+}
+
 
 /*
  ***************************************************
@@ -94,7 +100,7 @@ blockquote p{
 	-ms-user-select:none;
 	user-select:none;
 	border:1px solid transparent;
-	padding:.5rem 1rem;
+	padding:.3rem 1rem;
 	font-size:1rem;
 	border-radius:.25rem;
 	-webkit-transition:all .2s ease-in-out;
@@ -106,7 +112,12 @@ blockquote p{
 	margin-left: 10px;
 }
 
-
+@media only screen and (max-width: 380px){
+	#searchsubmit{
+		margin-top: 5px;
+		margin-left: 0px;
+	}
+}
 
 
 
@@ -245,8 +256,8 @@ a.page-numbers:hover {
 
 @media only screen and (max-width: 995px){
 	.newsletter{
-		height: 150px;
-		line-height: 45px;
+		height: 160px;
+		line-height: 35px;
 	}
 
 	.newsletter-content{
@@ -322,8 +333,6 @@ a.page-numbers:hover {
 
 .post-content h2{
     font-size: 1.6em !important;
-    padding-left: 30px;
-    padding-right: 30px;
     color: $primary;
 }
 
@@ -333,13 +342,17 @@ a.page-numbers:hover {
     color: rgba(0,0,0,0.75);
     padding-top: 25px;
     padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
-.post-content p{
-	padding-left: 30px;
-	padding-right: 30px;
+
+@media only screen and (min-width: 770px){
+	.post-content h2,
+	.post-content h3,
+	.post-content p
+	{
+	    padding-left: 30px;
+	    padding-right: 30px;
+	}
 }
 
 .post-content img{
