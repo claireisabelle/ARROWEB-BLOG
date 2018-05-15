@@ -39,6 +39,7 @@
 						<li><a href="https://arroweb.net/questions-frequentes">Questions</a></li>
 						<li><a href="https://arroweb.net/webmaster-freelance-caen">A propos</a></li>
 						<li><a href="https://arroweb.net/contact-arroweb">Contact</a></li>
+						<li><a href="https://arroweb.net/blog">Blog</a></li>
 						<li><a href="https://arroweb.net/mentions-legales">Mentions légales</a></li>
 						<li><a href="https://arroweb.net/protection-donnees">Vos données personnelles</a></li>
 					</ul>
